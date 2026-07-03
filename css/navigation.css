@@ -1,0 +1,321 @@
+/* ========================================
+   NAVIGATION
+   Levy Martin
+======================================== */
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:var(--z-header);
+    transition:var(--transition-normal);
+}
+
+/* Header when scrolling */
+
+header.scrolled{
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(18px);
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+/* Navbar */
+
+.navbar{
+    width:min(95%, var(--container-width));
+    margin:auto;
+    height:var(--header-height);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* Logo */
+
+.logo img{
+    height:42px;
+    width:auto;
+    transition:var(--transition-fast);
+}
+
+.logo:hover img{
+    transform:scale(1.05);
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:45px;
+}
+
+.nav-links a{
+    position:relative;
+    font-size:.95rem;
+    font-weight:500;
+    color:var(--color-primary);
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+/* Animated underline */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:1px;
+
+    background:var(--color-primary);
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* Right Side */
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.nav-icons a{
+
+    font-size:.85rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:var(--color-primary);
+
+    position:relative;
+
+}
+
+.nav-icons a::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-6px;
+
+    left:0;
+
+    width:0;
+
+    height:1px;
+
+    background:var(--color-primary);
+
+    transition:.3s;
+
+}
+
+.nav-icons a:hover::after{
+
+    width:100%;
+
+}
+
+/* Mobile Button */
+
+.menu-btn{
+
+    display:none;
+
+    width:45px;
+
+    height:45px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.menu-btn span{
+
+    width:28px;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    transition:.4s;
+
+}
+
+/* Animated Burger */
+
+.menu-btn.active span:nth-child(1){
+
+    transform:rotate(45deg) translateY(6px);
+
+}
+
+.menu-btn.active span:nth-child(2){
+
+    transform:rotate(-45deg) translateY(-6px);
+
+}
+
+/* Mobile Menu */
+
+.mobile-menu{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    gap:35px;
+
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+
+    transform:translateY(-30px);
+
+    transition:opacity .35s ease,
+               transform .35s ease,
+               visibility .35s;
+
+    z-index:999;
+}
+
+.mobile-menu.active{
+
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+
+    transform:translateY(0);
+
+}
+
+.mobile-menu a{
+
+    font-size:2rem;
+
+    font-family:var(--font-heading);
+
+    color:var(--color-primary);
+
+}
+
+/* Hover Effect */
+
+.mobile-menu a:hover{
+
+    opacity:.6;
+
+}
+
+/* Search / Cart Count */
+
+.badge{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    font-size:.65rem;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:absolute;
+
+    top:-10px;
+
+    right:-10px;
+
+}
+
+/* Transparent Hero */
+
+.hero + *{
+
+    margin-top:0;
+
+}
+
+.cart-link{
+
+    position:relative;
+
+}
+
+.cart-count{
+
+    position:absolute;
+
+    top:-10px;
+
+    right:-14px;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:.65rem;
+
+    font-weight:600;
+
+}

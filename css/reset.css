@@ -1,0 +1,109 @@
+/* ========================================
+   RESET CSS
+   Levy Martin
+======================================== */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Smooth scrolling */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Body */
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+}
+
+/* Images */
+
+img,
+picture,
+svg,
+video,
+canvas{
+    display:block;
+    max-width:100%;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Lists */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* Buttons */
+
+button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    font:inherit;
+}
+
+/* Inputs */
+
+input,
+textarea,
+select,
+button{
+    font:inherit;
+    outline:none;
+}
+
+/* Tables */
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight:inherit;
+}
+
+/* Paragraphs */
+
+p{
+    line-height:1.7;
+}
+
+/* Textarea */
+
+textarea{
+    resize:none;
+}
+
+/* Remove tap highlight */
+
+a,
+button{
+    -webkit-tap-highlight-color:transparent;
+}

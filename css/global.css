@@ -1,0 +1,529 @@
+/* ========================================
+   GLOBAL STYLES
+   Levy Martin
+======================================== */
+
+/* ========== BODY ========== */
+
+body{
+    font-family:var(--font-body);
+    font-size:var(--fs-md);
+    font-weight:var(--fw-normal);
+    line-height:var(--line-normal);
+    color:var(--color-text);
+    background:var(--color-white);
+    overflow-x:hidden;
+}
+
+/* ========== CONTAINER ========== */
+
+.container{
+    width:min(92%, var(--container-width));
+    margin:auto;
+}
+
+.container-small{
+    width:min(90%, var(--container-small));
+    margin:auto;
+}
+
+.container-mini{
+    width:min(90%, var(--container-mini));
+    margin:auto;
+}
+
+/* ========== SECTIONS ========== */
+
+section{
+    padding:120px 0;
+}
+
+/* ========== HEADINGS ========== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--font-heading);
+
+    color:var(--color-primary);
+
+    line-height:1.1;
+
+    letter-spacing:-1px;
+
+    font-weight:500;
+
+}
+
+h1{
+    font-size:clamp(3.5rem,8vw,7rem);
+}
+
+h2{
+    font-size:clamp(2.5rem,5vw,4.5rem);
+}
+
+h3{
+    font-size:clamp(1.4rem,2vw,2rem);
+}
+
+h4{
+    font-size:1.4rem;
+}
+
+/* ========== PARAGRAPH ========== */
+
+p{
+
+    color:var(--color-text-light);
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+/* ========== SECTION TITLE ========== */
+
+.section-title{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    font-size:.8rem;
+
+    letter-spacing:4px;
+
+    color:var(--color-primary);
+
+    text-transform:uppercase;
+
+    font-weight:600;
+
+}
+
+/* ========== SECTION HEADING ========== */
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-heading h2{
+
+    margin-top:10px;
+
+}
+
+/* ========== BUTTONS ========== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 42px;
+
+    background:var(--color-primary);
+
+    color:var(--color-white);
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    transition:var(--transition-normal);
+
+    border:1px solid var(--color-primary);
+
+}
+
+.btn:hover{
+
+    background:transparent;
+
+    color:var(--color-primary);
+
+}
+
+/* White Button */
+
+.btn-light{
+
+    background:var(--color-white);
+
+    color:var(--color-primary);
+
+    border:1px solid var(--color-white);
+
+}
+
+.btn-light:hover{
+
+    background:transparent;
+
+    color:var(--color-white);
+
+}
+
+/* Outline */
+
+.btn-outline{
+
+    background:transparent;
+
+    border:1px solid var(--color-primary);
+
+    color:var(--color-primary);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--color-primary);
+
+    color:white;
+
+}
+
+/* ========== IMAGES ========== */
+
+img{
+
+    width:100%;
+
+    object-fit:cover;
+
+}
+
+/* ========== LINKS ========== */
+
+a{
+
+    transition:var(--transition-fast);
+
+}
+
+/* ========== FORMS ========== */
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid var(--color-border);
+
+    font-size:1rem;
+
+    background:white;
+
+}
+
+input:focus,
+textarea:focus{
+
+    border-color:var(--color-primary);
+
+}
+
+/* ========== SPACING HELPERS ========== */
+
+.mt-1{margin-top:1rem;}
+.mt-2{margin-top:2rem;}
+.mt-3{margin-top:3rem;}
+.mt-4{margin-top:4rem;}
+
+.mb-1{margin-bottom:1rem;}
+.mb-2{margin-bottom:2rem;}
+.mb-3{margin-bottom:3rem;}
+.mb-4{margin-bottom:4rem;}
+
+/* ========== GRID ========== */
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px;
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/* ========== CARDS ========== */
+
+.card{
+
+    background:white;
+
+    overflow:hidden;
+
+}
+
+/* ========== SCROLLBAR ========== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f5f5f5;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--color-primary);
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#000;
+
+}
+
+/* ========== SELECTION ========== */
+
+::selection{
+
+    background:var(--color-primary);
+
+    color:white;
+
+}
+
+/* ========== UTILITIES ========== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ========== LOADER ========== */
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:var(--z-loader);
+
+}
+
+.loader img{
+
+    width:120px;
+
+}
+
+/* ========== CUSTOM CURSOR ========== */
+
+.cursor{
+
+    width:20px;
+
+    height:20px;
+
+    border:1px solid var(--color-primary);
+
+    border-radius:50%;
+
+    position:fixed;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:99999;
+
+}
+
+
+/*=========================================
+BACK TO TOP
+=========================================*/
+
+.back-to-top{
+
+    position:fixed;
+
+    right:35px;
+
+    bottom:35px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.back-to-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/*=========================================
+NOTIFICATION
+=========================================*/
+
+.notification{
+
+    position:fixed;
+
+    top:30px;
+
+    right:30px;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    padding:18px 30px;
+
+    border-radius:8px;
+
+    transform:translateX(120%);
+
+    transition:.35s;
+
+    z-index:99999;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.notification.show{
+
+    transform:translateX(0);
+
+}
+
+.wishlist-link{
+
+    position:relative;
+
+}
+
+.wishlist-count{
+
+    position:absolute;
+
+    top:-10px;
+
+    right:-12px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:.65rem;
+
+}

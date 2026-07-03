@@ -1,0 +1,92 @@
+.page-hero{
+    min-height:65vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f8f8f8;
+}
+
+.coming-soon{
+    padding:140px 20px;
+    background:#ffffff;
+}
+
+.container-mini{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.section-title{
+    font-size:.85rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#888;
+    margin-bottom:20px;
+}
+
+.coming-soon h2{
+
+    font-size:clamp(2.5rem,5vw,4.5rem);
+    line-height:1.1;
+    margin-bottom:35px;
+
+}
+
+.coming-soon p{
+
+    max-width:650px;
+    margin:0 auto;
+    line-height:2;
+    color:#666;
+    font-size:1.05rem;
+
+}
+
+/* Decorative divider */
+
+.coming-soon::after{
+
+    content:"";
+
+    display:block;
+
+    width:120px;
+
+    height:1px;
+
+    background:#000;
+
+    margin:70px auto 0;
+
+}
+
+/* Coming Soon box */
+
+.collection-note{
+
+    margin-top:70px;
+
+    padding:45px;
+
+    border:1px solid #e5e5e5;
+
+    background:#fafafa;
+
+}
+
+.collection-note h3{
+
+    margin-bottom:15px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.collection-note p{
+
+    margin:0;
+
+}

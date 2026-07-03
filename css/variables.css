@@ -1,0 +1,166 @@
+/* ========================================
+   LEVY MARTIN
+   VARIABLES
+======================================== */
+
+:root{
+
+    /* =====================================
+       COLORS
+    ===================================== */
+
+    --color-primary: #1F0E0A;
+    --color-secondary: #BEC0B7;
+    --color-white: #FFFFFF;
+
+    --color-black: #111111;
+
+    --color-text: #2B2B2B;
+    --color-text-light: #6F6F6F;
+
+    --color-border: #E5E5E5;
+
+    --color-success: #2E7D32;
+    --color-danger: #C62828;
+
+
+    /* =====================================
+       TYPOGRAPHY
+    ===================================== */
+
+    --font-heading: "Cormorant Garamond", serif;
+    --font-body: "Inter", sans-serif;
+
+
+    /* =====================================
+       FONT SIZES
+    ===================================== */
+
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 3rem;
+    --fs-4xl: 4rem;
+    --fs-5xl: 5rem;
+    --fs-6xl: 7rem;
+
+
+    /* =====================================
+       FONT WEIGHTS
+    ===================================== */
+
+    --fw-light:300;
+    --fw-normal:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+
+
+    /* =====================================
+       LINE HEIGHT
+    ===================================== */
+
+    --line-tight:1.1;
+    --line-normal:1.5;
+    --line-relaxed:1.8;
+
+
+    /* =====================================
+       LETTER SPACING
+    ===================================== */
+
+    --letter-tight:-1px;
+    --letter-normal:0;
+    --letter-wide:2px;
+    --letter-extra:5px;
+
+
+    /* =====================================
+       SPACING
+    ===================================== */
+
+    --space-1:0.25rem;
+    --space-2:0.5rem;
+    --space-3:0.75rem;
+    --space-4:1rem;
+    --space-5:1.5rem;
+    --space-6:2rem;
+    --space-7:3rem;
+    --space-8:4rem;
+    --space-9:6rem;
+    --space-10:8rem;
+    --space-11:10rem;
+
+
+    /* =====================================
+       CONTAINER
+    ===================================== */
+
+    --container-width:1400px;
+    --container-small:1200px;
+    --container-mini:900px;
+
+
+    /* =====================================
+       BORDER RADIUS
+    ===================================== */
+
+    --radius-sm:4px;
+    --radius-md:8px;
+    --radius-lg:16px;
+    --radius-xl:30px;
+    --radius-circle:50%;
+
+
+    /* =====================================
+       SHADOWS
+    ===================================== */
+
+    --shadow-sm:0 2px 10px rgba(0,0,0,.05);
+
+    --shadow-md:0 10px 30px rgba(0,0,0,.08);
+
+    --shadow-lg:0 20px 60px rgba(0,0,0,.15);
+
+
+    /* =====================================
+       TRANSITIONS
+    ===================================== */
+
+    --transition-fast:.25s ease;
+
+    --transition-normal:.4s ease;
+
+    --transition-slow:.8s ease;
+
+
+    /* =====================================
+       HEADER
+    ===================================== */
+
+    --header-height:90px;
+
+
+    /* =====================================
+       Z INDEX
+    ===================================== */
+
+    --z-loader:99999;
+    --z-menu:9999;
+    --z-header:1000;
+    --z-dropdown:100;
+    --z-overlay:90;
+
+
+    /* =====================================
+       BUTTONS
+    ===================================== */
+
+    --button-height:58px;
+    --button-padding:0 40px;
+
+
+}
