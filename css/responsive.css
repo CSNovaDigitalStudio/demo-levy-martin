@@ -130,6 +130,12 @@
         height:90vh;
     }
 
+    .about-hero-content{
+        align-items:flex-start
+    }
+
+    
+
     .hero-content{
         align-items:center;
         text-align:center;
