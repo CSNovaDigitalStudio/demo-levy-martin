@@ -390,3 +390,27 @@
     }
 
 }
+
+@media (max-width:768px){
+
+.about-hero-content{
+
+    left:30px;
+
+    right:30px;
+
+    width:auto;
+
+    max-width:none;
+
+    transform:translateY(-50%);
+
+}
+
+.about-hero-content h1{
+
+    font-size:3rem;
+
+}
+
+}
