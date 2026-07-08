@@ -12,12 +12,18 @@ const mobileLinks = document.querySelectorAll(".mobile-menu a");
     Sticky Header
 =========================================*/
 
-function handleScroll() {
+function handleScroll(){
 
-    if (window.scrollY > 60) {
+    if(header.classList.contains("solid-header")) return;
+
+    if(window.scrollY > 60){
+
         header.classList.add("scrolled");
-    } else {
+
+    }else{
+
         header.classList.remove("scrolled");
+
     }
 
 }
@@ -32,6 +38,7 @@ menuBtn.addEventListener("click", () => {
 
     menuBtn.classList.toggle("active");
     mobileMenu.classList.toggle("active");
+    header.classList.toggle("scrolled");
 
     if (mobileMenu.classList.contains("active")) {
         document.body.style.overflow = "hidden";
