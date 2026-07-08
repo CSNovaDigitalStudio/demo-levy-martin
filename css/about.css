@@ -54,7 +54,7 @@
 
 }
 
-.hero-content{
+.about-hero-content{
 
     position:absolute;
 
@@ -76,15 +76,15 @@
 
 }
 
-.hero-content h1,
-.hero-content p,
-.hero-subtitle{
+.about-hero-content h1,
+.about-hero-content p,
+.about-hero-subtitle{
 
     text-align:left;
 
 }
 
-.hero-subtitle{
+.about-hero-subtitle{
 
     color:white;
 
@@ -98,7 +98,7 @@
 
 }
 
-.hero-content h1{
+.about-hero-content h1{
 
     color:white;
 
@@ -110,7 +110,7 @@
 
 }
 
-.hero-description{
+.about-hero-description{
 
     color:rgba(255,255,255,.92);
 
@@ -124,7 +124,7 @@
 
 }
 
-.hero-content .btn{
+.about-hero-content .btn{
 
     background:white;
 
@@ -134,7 +134,7 @@
 
 }
 
-.hero-content .btn:hover{
+.about-hero-content .btn:hover{
 
     background:transparent;
 
