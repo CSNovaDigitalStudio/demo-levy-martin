@@ -221,6 +221,7 @@ header.scrolled{
     bottom:0;
 
     background:#fff;
+    z-index: 9999;
 
 }
 
