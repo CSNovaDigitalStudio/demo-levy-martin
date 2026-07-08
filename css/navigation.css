@@ -6,12 +6,17 @@
 /* Header */
 
 header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:var(--z-header);
-    transition:var(--transition-normal);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: var(--z-header);
+
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    transition: .4s ease;
 }
 
 /* Header when scrolling */
@@ -37,7 +42,7 @@ header.scrolled{
 /* Logo */
 
 .logo img{
-    height:42px;
+    max-height:82px;
     width:auto;
     transition:var(--transition-fast);
 }
@@ -58,7 +63,7 @@ header.scrolled{
     position:relative;
     font-size:.95rem;
     font-weight:500;
-    color:var(--color-primary);
+    color:#fff;
     text-transform:uppercase;
     letter-spacing:2px;
 }
@@ -79,7 +84,7 @@ header.scrolled{
 
     height:1px;
 
-    background:var(--color-primary);
+    background:#fff;
 
     transition:.35s;
 
@@ -107,7 +112,7 @@ header.scrolled{
 
     letter-spacing:2px;
 
-    color:var(--color-primary);
+    color:#fff;
 
     position:relative;
 
@@ -190,32 +195,33 @@ header.scrolled{
 .mobile-menu{
 
     position:fixed;
-
     inset:0;
 
-    background:#fff;
-
     display:flex;
-
+    flex-direction:column;
     justify-content:center;
-
     align-items:center;
 
-    flex-direction:column;
+    gap:22px;
 
-    gap:35px;
+    background:rgba(255,255,255,.98);
+    backdrop-filter:blur(20px);
 
     opacity:0;
     visibility:hidden;
     pointer-events:none;
 
-    transform:translateY(-30px);
+    transform:translateY(-20px);
 
-    transition:opacity .35s ease,
-               transform .35s ease,
-               visibility .35s;
+    transition:.35s;
 
-    z-index:999;
+    top:var(--header-height);
+    left:0;
+    right:0;
+    bottom:0;
+
+    background:#fff;
+
 }
 
 .mobile-menu.active{
@@ -317,5 +323,37 @@ header.scrolled{
     font-size:.65rem;
 
     font-weight:600;
+
+}
+
+header.scrolled .nav-links a,
+header.scrolled .nav-icons a{
+    color:var(--color-primary);
+}
+
+header.scrolled .nav-links a::after,
+header.scrolled .nav-icons a::after{
+    background:var(--color-primary);
+}
+
+.solid-header{
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+}
+
+.solid-header .nav-links a{
+
+    color:var(--color-primary);
+
+}
+
+.solid-header .nav-links a::after{
+
+    background:var(--color-primary);
 
 }
