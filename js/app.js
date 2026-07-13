@@ -146,3 +146,73 @@ function debounce(callback, delay = 100) {
 =========================================*/
 
 document.body.classList.add("page-ready");
+
+
+/*=========================================
+NEWSLETTER TO WHATSAPP
+=========================================*/
+
+const newsletter=document.getElementById("newsletterForm");
+
+if(newsletter){
+
+newsletter.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+const email=document.getElementById("newsletterEmail").value.trim();
+
+const message=
+`New Levy Martin Newsletter Subscriber:%0A%0AEmail: ${email}`;
+
+window.open(
+
+`https://wa.me/244923311962?text=${message}`,
+
+"_blank"
+
+);
+
+newsletter.reset();
+
+});
+
+}
+
+/*=========================================
+CONTACT FORM TO WHATSAPP
+=========================================*/
+
+const contact=document.getElementById("contactForm");
+
+if(contact){
+
+contact.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+const name=document.getElementById("contactName").value;
+
+const email=document.getElementById("contactEmail").value;
+
+const subject=document.getElementById("contactSubject").value;
+
+const message=document.getElementById("contactMessage").value;
+
+const whatsapp=
+
+`New Website Contact:%0A%0AName: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0A%0AMessage:%0A${message}`;
+
+window.open(
+
+`https://wa.me/27635195475?text=${whatsapp}`,
+
+"_blank"
+
+);
+
+contact.reset();
+
+});
+
+}
